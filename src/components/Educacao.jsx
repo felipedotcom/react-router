@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 
-const Home = () => {
+const Educacao = () => {
   const [posts, setPosts] = useState([])
 
   useEffect(() => {
     axios
-      .get('https://jsonplaceholder.typicode.com/posts')
+      .get('https://jsonplaceholder.typicode.com/posts/1')
       .then(res => {
         setPosts(res.data)
       })
@@ -16,12 +16,11 @@ const Home = () => {
     <div>
       <ul>
         {
-          posts.map(post => (
-            <li key={post.id}>{post.title}</li>
-          ))}
+          <li>{posts.title}</li>
+        }
       </ul>
     </div>
   )
 }
 
-export default Home
+export default Educacao
