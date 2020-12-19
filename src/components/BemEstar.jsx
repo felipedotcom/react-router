@@ -13,7 +13,7 @@ const BemEstar = () => {
        <Link to={`${url}/higiene`}>Higiene</Link>
      </li>
      <li>
-       <Link to={`${url}/saude`}>Saúde</Link>
+       <Link to={`${url}/saude`}>Saúde</Link> 
      </li>
    </ul>
 

@@ -1,9 +1,42 @@
 {
+  "categorias": [
+    {
+      "id": "bem-estar",
+      "nome": "bem-estar",
+      "subcategorias": ["higiene","saude"]
+    },
+    {
+      "id":2,
+      "nome": "comportamento",
+      "subcategorias": ["treinamento","educacao"]
+    },
+    {
+      "id":3,
+      "nome": "nutricao",
+      "subcategorias": ["dieta","receita"]
+    }
+  ],
   "posts": [
     {
       "id": 1,
       "title": "json-server",
-      "body": "A ansiedade excessiva por conta da COVID-19 se dá na maioria das vezes pela quebra na rotina do cachorro que ocorreu com a chegada da pandemia. Pense em como foi transformador para o cão que estava acostumado a passar o dia sem contar com a família inteira dentro de casa, de repente, perceber o aumento na “oferta de humanos” em todos os dias da semana?"
+      "body": "A ansiedade excessiva por conta da COVID-19 se dá na maioria das vezes pela quebra na rotina do cachorro que ocorreu com a chegada da pandemia. Pense em como foi transformador para o cão que estava acostumado a passar o dia sem contar com a família inteira dentro de casa, de repente, perceber o aumento na “oferta de humanos” em todos os dias da semana?",
+      "categoria": "bem-estar",
+      "subcategoria":"higiene"
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "body": "A ansiedade excessiva por conta da COVID-19 se dá na maioria das vezes pela quebra na rotina do cachorro que ocorreu com a chegada da pandemia. Pense em como foi transformador para o cão que estava acostumado a passar o dia sem contar com a família inteira dentro de casa, de repente, perceber o aumento na “oferta de humanos” em todos os dias da semana?",
+      "categoria": "bem-estar",
+      "subcategoria":"saude"
+    },
+    {
+      "id": 3,
+      "title": "json-server",
+      "body": "A ansiedade excessiva por conta da COVID-19 se dá na maioria das vezes pela quebra na rotina do cachorro que ocorreu com a chegada da pandemia. Pense em como foi transformador para o cão que estava acostumado a passar o dia sem contar com a família inteira dentro de casa, de repente, perceber o aumento na “oferta de humanos” em todos os dias da semana?",
+      "categoria": "bem-estar",
+      "subcategoria":"higiene"
     }
   ]
 }
