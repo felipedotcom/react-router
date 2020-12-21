@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { Route, Link, Switch, useRouteMatch, useParams, useHistory } from 'react-router-dom'
+import { Route, Link, Switch, useRouteMatch, useParams, useHistory, useLocation } from 'react-router-dom'
 /* import axios from 'axios' */
 
 const SubCategoria = () => {
   const { path, url } = useRouteMatch()
   const [ posts, setPosts ] = useState([])
   const { tag } = useParams()
-  const { history } = useHistory()
+  let { location } = useLocation()
   
   useEffect(() => {
     const lerCategoria = async () => {
@@ -20,9 +20,7 @@ const SubCategoria = () => {
     lerCategoria()
   }, [])
 
-  const handleHistory = () => { 
-    return history.push('/')
-  }
+  
 
   return (
     <>
@@ -34,9 +32,9 @@ const SubCategoria = () => {
               <li>
             <h1>lorem ispum</h1>
             <p>{post.body}</p>
-            <button onClick={handleHistory}>
-              Leia Mais...
-            </button>
+              <Link to={{
+              pathname: `posts/${post.id}`
+            }}>Leia Mais...</Link> 
           </li>
             )
           })
@@ -49,6 +47,3 @@ const SubCategoria = () => {
 
 export default SubCategoria
 
-{/* <Link to={{
-              pathname: `posts/${post.id}`
-            }}>Leia Mais...</Link> */}
