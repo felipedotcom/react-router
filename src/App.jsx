@@ -3,10 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import NavBar from './components/NavBar.jsx'
 import Home from './paginas/Home.jsx'
-/* import Nutricao from './components/Nutricao.jsx'
-import BemEstar from './components/BemEstar.jsx'
-import Comportamento from './components/Comportamento.jsx' */
 import Categoria from './paginas/Categoria.jsx';
+import Post from './paginas/Post.jsx'
+import Pagina404 from './paginas/Pagina404.jsx';
 
 function App() {
   return (
@@ -18,17 +17,18 @@ function App() {
           <Home />
         </Route>
 
- {/*        <Route path='/nutricao'>
-          <Nutricao />
-        </Route>
-
-        <Route path='/comportamento'>
-          <Comportamento />
-        </Route> */}
-
         <Route path='/categoria/:id'>
           <Categoria />
         </Route>
+
+        <Route path='/posts/:id'>
+          <Post />
+        </Route>
+    
+        <Route>
+          <Pagina404 />
+        </Route>
+  
       </Switch>
     </Router>
 
