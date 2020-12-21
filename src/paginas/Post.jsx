@@ -6,7 +6,8 @@ const Post = () => {
   const [post, setPost] = useState({})
 
   useEffect(() => {
-    const lerPosts = async () => { //extrair
+    const lerPosts = async () => {
+      //extrair
 
       try {
         const resposta = await fetch(`http://localhost:5000/posts/${id}`)
@@ -14,8 +15,7 @@ const Post = () => {
           const postConteudo = await resposta.json()
           setPost(postConteudo)
         }
-      }
-      catch (erro) {
+      } catch (erro) {
         console.log('entrou no catch', erro)
       }
     }
