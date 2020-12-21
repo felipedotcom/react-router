@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Route, Link, Switch, useRouteMatch, useParams, useHistory, useLocation } from 'react-router-dom'
+import { Route, Link, Switch, useRouteMatch, useParams, useHistory, useLocation, Redirect } from 'react-router-dom'
 /* import axios from 'axios' */
 
 const SubCategoria = () => {
@@ -32,8 +32,9 @@ const SubCategoria = () => {
               <li>
             <h1>lorem ispum</h1>
             <p>{post.body}</p>
+            
               <Link to={{
-              pathname: `posts/${post.id}`
+              pathname: `/posts/${post.id}` //post sem barra vai dar erro mostrar isso no curso
             }}>Leia Mais...</Link> 
           </li>
             )
