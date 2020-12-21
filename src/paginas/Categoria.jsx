@@ -40,8 +40,6 @@ const Categoria = () => {
         <Route path={`${path}/:tag`}>
           <SubCategoria />
         </Route>
-
-
       </Switch>
 
   </>
