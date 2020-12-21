@@ -1,19 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { busca } from '../api/api'
 
 const SubCategoria = () => {
   const [posts, setPosts] = useState([])
 
-  const lerCategoria = async () => {
-    const resposta = await fetch(`http://localhost:5000/posts/`)
-
-    const sub = await resposta.data
-
-    setPosts(sub)
-  }
-
   useEffect(() => {
-    lerCategoria()
+    busca('/posts/', setPosts)
   }, [])
 
   return (
