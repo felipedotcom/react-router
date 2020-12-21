@@ -4,10 +4,14 @@ import axios from 'axios'
 const Home = () => {
   const [posts, setPosts] = useState([])
 
+  const buscaPosts = async () => {
+    const resposta = await axios.get('http://localhost:5000/posts')
+    const conteudoPosts = resposta.data
+    setPosts(conteudoPosts)
+  }
+
   useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/posts').then((res) => {
-      setPosts(res.data)
-    })
+    buscaPosts()
   }, [])
 
   return (
