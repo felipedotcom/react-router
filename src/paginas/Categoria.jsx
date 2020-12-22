@@ -1,29 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import { Route, Link, Switch, useRouteMatch, useParams } from 'react-router-dom'
 import SubCategoria from './Subcategoria.jsx'
-
+import { busca } from '../api/api'
 
 const Categoria = () => {
   const { path, url } = useRouteMatch()
-  const [subcategorias, setSubCategoria] = useState([])
+  const [subcategorias, setSubCategorias] = useState([])
   const { id } = useParams()
 
-  useEffect(() => {
-    const lerCategoria = async () => {
-      
-      const resposta = await fetch(`http://localhost:5000/categorias/${id}`)
-      const categoria = await resposta.json()
-      setSubCategoria(categoria.subcategorias)
 
-    }
-    lerCategoria()
+  useEffect(() => {
+    busca(`/categorias/${id}`, (categoria) => {
+      setSubCategorias(categoria.subcategorias)
+    })
   }, [])
 
   return (
     <>
       <ul>
-
-        {subcategorias.map(subcategoria => {
+        {subcategorias.map((subcategoria) => {
           return (
             <li>
               <Link to={`${url}/${subcategoria}`}>{subcategoria}</Link>
@@ -37,9 +32,7 @@ const Categoria = () => {
           <SubCategoria />
         </Route>
       </Switch>
-
     </>
-
   )
 }
 
