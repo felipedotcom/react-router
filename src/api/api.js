@@ -15,9 +15,12 @@ export const busca = async (url, setDado) => {
       return
     }
 
+    if (resposta.status === 404) {
+      throw new Error('404')
+    }
+
     throw new Error(resposta.body)
   } catch (erro) {
-    // Precisa ver como tratar o erro
-    console.log(`Erro: ${erro}`)
+    throw new Error(erro.message)
   }
 }
