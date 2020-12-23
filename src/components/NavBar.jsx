@@ -8,6 +8,11 @@ const NavBar = () => {
       <nav>
         <ul>
           <li>
+            <NavLink activeClassName="selectedPage" to="/sobre">
+              Sobre
+            </NavLink>
+          </li>
+          <li>
             <NavLink activeClassName="selectedPage" to="/categoria/bem-estar">
               Bem Estar
             </NavLink>
@@ -18,11 +23,6 @@ const NavBar = () => {
               to="/categoria/comportamento"
             >
               Comportamento
-            </NavLink>
-          </li>
-          <li>
-            <NavLink activeClassName="selectedPage" to="/sobre">
-              Sobre
             </NavLink>
           </li>
         </ul>

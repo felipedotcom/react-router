@@ -14,24 +14,59 @@
   "posts": [
     {
       "id": 1,
-      "title": "post do cachorro ansioso",
-      "body": "A ansiedade excessiva por conta da COVID-19 se dá na maioria das vezes pela quebra na rotina do cachorro que ocorreu com a chegada da pandemia. Pense em como foi transformador para o cão que estava acostumado a passar o dia sem contar com a família inteira dentro de casa, de repente, perceber o aumento na “oferta de humanos” em todos os dias da semana?",
+      "title": "Banho no cão",
+      "metadescription": "Dê banho no seu cão com as ferramentas certas",
+      "body": "É imprescindível que os pais humanos tenham as ferramentas adequadas para dar um bom banho no pet. Lembre-se de que esse pode ser um momento de angústia e estresse para o cão, e ter os produtos certos pode ajudá-lo a se sentir mais confortável. ",
       "categoria": "bem-estar",
       "subcategoria": "higiene"
     },
     {
       "id": 2,
-      "title": "json-server",
-      "body": "A ansiedade excessiva por conta da COVID-19 se dá na maioria das vezes pela quebra na rotina do cachorro que ocorreu com a chegada da pandemia. Pense em como foi transformador para o cão que estava acostumado a passar o dia sem contar com a família inteira dentro de casa, de repente, perceber o aumento na “oferta de humanos” em todos os dias da semana?",
+      "title": "Tapete higiênico: sete opções para seu cachorro",
+      "metadescription": "Escolha o banheiro que seu cachorro merece",
+      "body": "Foi-se o tempo em que as pessoas usavam jornais em cantos estratégicos da casa para o cachorro fazer xixi ou cocô. Nesse período, os pais humanos tinham que conviver com vários pedaços de papel sujos pela casa, além de um tremendo mau cheiro. Foi aí que surgiram os tapetes higiênicos.",
+      "categoria": "bem-estar",
+      "subcategoria": "higiene"
+    },
+    {
+      "id": 3,
+      "title": "Verão é época de pulgas?",
+      "metadescription": "Como cuidar do seu pet nesse momento de altas temperaturas?",
+      "body": "Sim, o verão é a famosa “época das pulgas”. O clima quente juntamente com a umidade gerada pelas chuvas típicas da estação é a fusão perfeita para aumentar a proliferação desses pequenos encrenqueiros, responsáveis por causar muita coceira e, possivelmente, problemas de pele, além de algumas outras complicações.",
       "categoria": "bem-estar",
       "subcategoria": "saude"
     },
     {
-      "id": 3,
-      "title": "json-server",
+      "id": 4,
+      "title": "Cachorros são mais ansiosos com o COVID-19",
+      "metadescription": "A mudança de rotina pode ser o maior fator",
       "body": "A ansiedade excessiva por conta da COVID-19 se dá na maioria das vezes pela quebra na rotina do cachorro que ocorreu com a chegada da pandemia. Pense em como foi transformador para o cão que estava acostumado a passar o dia sem contar com a família inteira dentro de casa, de repente, perceber o aumento na “oferta de humanos” em todos os dias da semana?",
-      "categoria": "bem-estar",
-      "subcategoria": "higiene"
+      "categoria": "comportamento",
+      "subcategoria": "educacao"
+    },
+    {
+      "id": 5,
+      "title": "Como educar um cachorro para não ser medroso",
+      "metadescription": "A socialização é um grande fator nesse aprendizado",
+      "body": "Quanto mais o seu cachorro for acostumado a vivenciar situações diferentes, melhor ele se desenvolve e menos medroso ele tenderá a ser. Então, assim que ele estiver liberado para fazer passeios, leve o seu cão para conhecer diferente cenários, pessoas e outros animais.",
+      "categoria": "comportamento",
+      "subcategoria": "educacao"
+    },
+    {
+      "id": 6,
+      "title": "Gato rosna?",
+      "metadescription": "Sim!",
+      "body": "A resposta para essa pergunta é sim, os gatos podem rosnar. Agora, descrever como um rosnado soa aos nossos ouvidos é bastante relativo, mas esse som geralmente é um grunhido oco, abafado, que pode acompanhar miados altos e linguagens corporais como orelhas para trás, postura “encolhida” e pupilas dilatadas. ",
+      "categoria": "comportamento",
+      "subcategoria": "treinamento"
+    },
+    {
+      "id": 7,
+      "title": "Como treinar um gato",
+      "metadescription": "Uma tarefa super importante para cuidar desse pet",
+      "body": "Afastar o gato de algum perigo, realizar um procedimento de higiene ou dar algum remédio podem ser tarefas desafiadoras para mães e pais de gatos. Porém, situações como estas podem ser facilitadas caso você ensine o pet a permanecer em um lugar que você determinou.",
+      "categoria": "comportamento",
+      "subcategoria": "treinamento"
     }
   ]
 }

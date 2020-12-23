@@ -8,6 +8,7 @@ const Categoria = () => {
   const [subcategorias, setSubCategorias] = useState([])
   const { id } = useParams()
 
+  const [posts, setPosts] = useState([])
 
   useEffect(() => {
     busca(`/categorias/${id}`, (categoria) => {
@@ -15,23 +16,35 @@ const Categoria = () => {
     })
   }, [id]) // precisa do id para o React atualizar o component
 
+  useEffect(() => {
+    busca(`/posts?categoria=${id}`, setPosts)
+  }, [id])
+
   return (
     <>
       <ul>
-        {subcategorias.map((subcategoria) => {
-          return (
-            <li key={subcategoria}>
-              <Link to={`${url}/${subcategoria}`}>{subcategoria}</Link>
-            </li>
-          )
-        })}
+        {subcategorias.map((subcategoria) => (
+          <li key={subcategoria}>
+            <Link to={`${url}/${subcategoria}`}>{subcategoria}</Link>
+          </li>
+        ))}
       </ul>
 
       <Switch>
-        <Route path={`${path}/:tag`}>
+        <Route path={`${path}/:subcategoria`}>
           <SubCategoria />
         </Route>
       </Switch>
+
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>
+            <h1>{post.title}</h1>
+            <p>{post.metadescription}</p>
+            <Link to={`/posts/${post.id}`}>Leia Mais...</Link>
+          </li>
+        ))}
+      </ul>
     </>
   )
 }
