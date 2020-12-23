@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Pagina404 = () => {
   return (
     <div>
-      <p>Rosto do Matheus</p>
+      <p>Ops, essa página não existe</p>
+      <Link to="/">Volte para a página inicial</Link>
     </div>
   )
 }
