@@ -14,7 +14,7 @@ const SubCategoria = () => {
       {posts.map((post) => {
         return (
           <li>
-            <h1>lorem ispum</h1>
+            <h1>{post.title}</h1>
             <p>{post.body}</p>
             <Link
               to={{

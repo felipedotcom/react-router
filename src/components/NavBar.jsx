@@ -20,6 +20,14 @@ const NavBar = () => {
               Comportamento
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              activeClassName="selectedPage"
+              to="/sobre"
+            >
+              Sobre
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import NavBar from './components/NavBar.jsx'
 import Home from './paginas/Home.jsx'
+import Sobre from './paginas/Sobre.jsx'
 import Categoria from './paginas/Categoria.jsx'
 import Post from './paginas/Post.jsx'
 import Pagina404 from './paginas/Pagina404.jsx'
@@ -14,6 +15,10 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+
+        <Route path="/sobre">
+          <Sobre />
         </Route>
 
         <Route path="/categoria/:id">
