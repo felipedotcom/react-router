@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const api = axios.create({
-  baseUrl: 'http://localhost:5000',
+  baseURL: 'http://localhost:5000',
 })
 
 export const busca = async (url, setDado) => {
