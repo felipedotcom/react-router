@@ -13,7 +13,7 @@ const SubCategoria = () => {
     <ul>
       {posts.map((post) => {
         return (
-          <li>
+          <li key={post.id}>
             <h1>{post.title}</h1>
             <p>{post.body}</p>
             <Link

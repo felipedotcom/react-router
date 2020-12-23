@@ -20,7 +20,7 @@ const Categoria = () => {
       <ul>
         {subcategorias.map((subcategoria) => {
           return (
-            <li>
+            <li key={subcategoria}>
               <Link to={`${url}/${subcategoria}`}>{subcategoria}</Link>
             </li>
           )
