@@ -13,7 +13,7 @@ const Categoria = () => {
     busca(`/categorias/${id}`, (categoria) => {
       setSubCategorias(categoria.subcategorias)
     })
-  }, [])
+  }, [id]) // precisa do id para o React atualizar o component
 
   return (
     <>
