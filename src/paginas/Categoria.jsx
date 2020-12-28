@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { Route, Link, Switch, useRouteMatch, useParams } from 'react-router-dom'
 import SubCategoria from './Subcategoria.jsx'
 import { busca } from '../api/api'
-import ListaPosts from './ListaPosts'
+import ListaPosts from '../components/ListaPosts'
+
+import '../assets/css/blog.css'
 
 const Categoria = () => {
   const { path, url } = useRouteMatch()
@@ -17,9 +19,9 @@ const Categoria = () => {
 
   return (
     <>
-      <ul>
+      <ul className="lista-categorias container flex">
         {subcategorias.map((subcategoria) => (
-          <li key={subcategoria}>
+          <li className="lista-categoriascategoria lista-categoriascategoria--bemestar" key={subcategoria}>
             <Link to={`${url}/${subcategoria}`}>{subcategoria}</Link>
           </li>
         ))}

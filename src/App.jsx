@@ -1,17 +1,19 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import NavBar from './components/NavBar.jsx'
+import Cabecalho from './components/Cabecalho.jsx'
 import Home from './paginas/Home.jsx'
 import Sobre from './paginas/Sobre.jsx'
 import Categoria from './paginas/Categoria.jsx'
 import Post from './paginas/Post.jsx'
 import Pagina404 from './paginas/Pagina404.jsx'
 
+import './assets/css/base/base.css'
+
 function App() {
   return (
     <Router>
-      <NavBar />
+      <Cabecalho />
       <Switch>
         <Route exact path="/">
           <Home />

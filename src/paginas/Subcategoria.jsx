@@ -1,7 +1,7 @@
 import React from 'react'
 import {  useParams } from 'react-router-dom'
 
-import ListaPosts from './ListaPosts'
+import ListaPosts from '../components/ListaPosts'
 
 const SubCategoria = () => {
   const { subcategoria } = useParams()
