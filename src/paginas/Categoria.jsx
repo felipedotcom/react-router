@@ -3,6 +3,7 @@ import { Route, Link, Switch, useRouteMatch, useParams } from 'react-router-dom'
 import SubCategoria from './Subcategoria.jsx'
 import { busca } from '../api/api'
 import ListaPosts from '../components/ListaPosts'
+import ListaCategorias from '../components/ListaCategorias'
 
 import '../assets/css/blog.css'
 
@@ -19,9 +20,17 @@ const Categoria = () => {
 
   return (
     <>
+      <div className="container">
+        <h2 className="titulo-pagina">Pet notícias</h2>
+      </div>
+      <ListaCategorias />
+
       <ul className="lista-categorias container flex">
         {subcategorias.map((subcategoria) => (
-          <li className="lista-categoriascategoria lista-categoriascategoria--bemestar" key={subcategoria}>
+          <li
+            className={`lista-categorias__categoria lista-categorias__categoria--${id}`}
+            key={subcategoria}
+          >
             <Link to={`${url}/${subcategoria}`}>{subcategoria}</Link>
           </li>
         ))}

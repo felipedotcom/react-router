@@ -36,8 +36,8 @@
     line-height: 1.3rem;
 }
 
-.cartao-post--bemestar {
-    border-color: var(--cor-categoria-bemestar);
+.cartao-post--bem-estar {
+    border-color: var(--cor-categoria-bem-estar);
 }
 
 .cartao-post--comportamento {
