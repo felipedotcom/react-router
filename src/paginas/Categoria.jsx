@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Route, Link, Switch, useRouteMatch, useParams } from 'react-router-dom'
-import SubCategoria from './Subcategoria.jsx'
+import SubCategoria from './Subcategoria'
 import { busca } from '../api/api'
 import ListaPosts from '../components/ListaPosts'
 import ListaCategorias from '../components/ListaCategorias'

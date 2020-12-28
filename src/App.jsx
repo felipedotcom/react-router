@@ -1,12 +1,12 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import Cabecalho from './components/Cabecalho.jsx'
-import Home from './paginas/Home.jsx'
-import Sobre from './paginas/Sobre.jsx'
-import Categoria from './paginas/Categoria.jsx'
-import Post from './paginas/Post.jsx'
-import Pagina404 from './paginas/Pagina404.jsx'
+import Cabecalho from './components/Cabecalho'
+import Home from './paginas/Home'
+import Sobre from './paginas/Sobre'
+import Categoria from './paginas/Categoria'
+import Post from './paginas/Post'
+import Pagina404 from './paginas/Pagina404'
 
 import './assets/css/base/base.css'
 
