@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import { busca } from '../api/api'
 
+import '../assets/css/post.css'
+
 const Post = () => {
   const { id } = useParams()
   const [post, setPost] = useState({})
@@ -11,13 +13,15 @@ const Post = () => {
     busca(`/posts/${id}`, setPost).catch((erro) => {
       history.push('/404')
     })
-  }, [])
+  }, [id, history])//tava dando warning aqui por isso eu coloquei
 
   return (
-    <div>
-      <h1>{post.title}</h1>
-      <p>{post.body}</p>
-    </div>
+    <main className="container flex flex--centro">
+      <article className="cartao post">
+        <h2 className="cartao__titulo">{post.title}</h2>
+        <p className="cartao__texto">{post.body}</p>
+      </article>
+    </main>
   )
 }
 export default Post
