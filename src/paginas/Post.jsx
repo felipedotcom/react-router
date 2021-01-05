@@ -11,7 +11,7 @@ const Post = () => {
 
   useEffect(() => {
     busca(`/posts/${id}`, setPost).catch((erro) => {
-      history.push('/404')
+      history.push('/404') //pegando erro disparado dentro do busca para fazer o catch
     })
   }, [id, history])//tava dando warning aqui por isso eu coloquei
 

@@ -11,16 +11,16 @@ export const busca = async (url, setDado) => {
     // Acho que o axios não tem resposta.ok
     // Depois a gente modifica isso para pegar os valores 2xx
     if (resposta.status === 200) {
-      setDado(resposta.data)
+      setDado(resposta.data) //conteudo da resposta
       return
     }
 
-    if (resposta.status === 404) {
+    if (resposta.status === 404) {//rota que nao existe
       throw new Error('404')
     }
 
-    throw new Error(resposta.body)
+    throw new Error(resposta.body)//qualquer outro erro que rolar
   } catch (erro) {
-    throw new Error(erro.message)
+    throw new Error(erro.message) //repassa erro
   }
 }
