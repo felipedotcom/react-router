@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react'
-import { busca } from '../api/api'
+import React, { useState, useEffect, useContext } from 'react'
 
 import { Link } from 'react-router-dom'
 import '../assets/css/componentes/cartao.css'
 import '../assets/css/componentes/cartao.css'
+import { ApiContext } from '../context/ApiContext'
 
 const ListaPosts = ({ url }) => {
   const [posts, setPosts] = useState([])
+  const { busca } = useContext(ApiContext)
 
   useEffect(() => {
     busca(url, setPosts)
