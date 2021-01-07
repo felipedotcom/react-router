@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
-
-import { busca } from '../api/api'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { ApiContext } from '../context/ApiContext'
 
 const ListaCategorias = () => {
   const [categorias, setCategorias] = useState([])
+  const { busca } = useContext(ApiContext)
 
   useEffect(() => {
     busca('/categorias', setCategorias)
